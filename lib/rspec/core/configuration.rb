@@ -197,6 +197,8 @@ module RSpec
               require 'rspec/core/expecting/with_rspec'
             when :stdlib
               require 'rspec/core/expecting/with_stdlib'
+            when :wrong
+              require 'rspec/core/expecting/with_wrong'
             else
               raise ArgumentError, "#{framework.inspect} is not supported"
             end
